@@ -1,0 +1,51 @@
+/* responsive.css */
+
+/* Media query per schermi con larghezza massima di 768px */
+@media screen and (max-width: 768px) {
+    /* Modifica il layout del grid system */
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .col-md-3,
+    .col-md-9 {
+      width: 100%;
+      margin: 0;
+    }
+  
+    /* Centra l'immagine */
+    .col-md-3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .col-md-3 img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Assicurati che tutte le sezioni/div occupino il 100% dello spazio */
+    .profile-edit {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .user-info,
+    .maturity-settings,
+    .autoplay-controls {
+      padding: 10px 0;
+    }
+  
+    /* Cambia il layout dei pulsanti */
+    .action-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .action-buttons .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

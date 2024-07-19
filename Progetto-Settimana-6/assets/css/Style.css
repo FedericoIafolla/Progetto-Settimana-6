@@ -1,0 +1,46 @@
+/* mobile.css */
+
+/* Media query per dispositivi con larghezza massima di 768px (tablet e smartphone) */
+@media (max-width: 768px) {
+    .avatar-img {
+      width: 6rem; /* Doppio rispetto al valore originale di 3rem */
+      height: 6rem; /* Doppio rispetto al valore originale di 3rem */
+      position: fixed; /* Posizione fissa per rimanere in alto a destra */
+      top: 0; /* Allineamento in alto */
+      right: 0; /* Allineamento a destra */
+      margin: 1rem; /* Spazio intorno all'immagine */
+      z-index: 1000; /* Assicurati che l'immagine sia sopra altri elementi */
+    }
+  
+    .navbar-icons {
+      position: fixed; /* Posizione fissa per rimanere in alto a destra sotto l'immagine del profilo */
+      top: 6rem; /* Posizionato sotto l'immagine del profilo */
+      right: 0; /* Allineamento a destra */
+      margin: 1rem; /* Spazio intorno ai bottoni */
+    }
+  
+    .custom-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .menu {
+      display: flex;
+      align-items: center;
+      border: none; /* Rimuovi il bordo se non necessario */
+    }
+  
+    .images-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    .images-container img {
+      width: calc(33.33% - 0.5rem); /* Mostra 3 immagini per riga */
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
